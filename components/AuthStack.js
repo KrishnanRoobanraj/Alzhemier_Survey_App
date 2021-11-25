@@ -34,21 +34,8 @@ import RootStack from './RootStack'
 const AuthNav = createStackNavigator();
 
 export default AuthNavigation = ({navigation}) => (
-  <AuthNav.Navigator initialRouteName="login">
-    <AuthNav.Screen
-      name="login"
-      options={{
-        headerShown: false,
-      }}
-      component={Login}
-    />
-    <AuthNav.Screen
-      name="register"
-      component={Register}
-      options={{
-        headerShown: true,
-      }}
-    />
+  <AuthNav.Navigator initialRouteName="mainscreen">
+
     <AuthNav.Screen
       name="mainscreen"
       component={RootStack}
